@@ -1,0 +1,201 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ===== Node.js / Next.js =====
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# local env files
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# ===== Tauri =====
+# Rust/Cargo build artifacts
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# Tauri generated files
+src-tauri/gen/
+
+# Tauri bundle outputs
+src-tauri/target/release/bundle/
+src-tauri/target/debug/bundle/
+
+# ===== IDE / Editor =====
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===== OS Generated Files =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== Logs =====
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== Runtime data =====
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ===== Coverage directory used by tools like istanbul =====
+lib-cov
+coverage
+*.lcov
+.nyc_output
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ===== Dependency directories =====
+node_modules/
+jspm_packages/
+
+# ===== Optional npm cache directory =====
+.npm
+
+# ===== Optional eslint cache =====
+.eslintcache
+
+# ===== Optional REPL history =====
+.node_repl_history
+
+# ===== Output of 'npm pack' =====
+*.tgz
+
+# ===== Yarn Integrity file =====
+.yarn-integrity
+
+# ===== parcel-bundler cache =====
+.cache
+.parcel-cache
+
+# ===== Temporary folders =====
+tmp/
+temp/
+
+# ===== Project specific =====
+# Test files
+test.py
+simple.zip
+
+# User uploaded files (if any)
+uploads/
+user-files/
+
+# Generated documentation
+docs/build/
+
+# Backup files
+*.bak
+*.backup
+*.old

@@ -1,0 +1,51 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Paper Burner",
+  "version": "1.0.0",
+  "identifier": "com.paperburner.app",
+  "build": {
+    "frontendDist": "../out",
+    "devUrl": "http://localhost:5028",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Paper Burner - PDF OCR与翻译工具",
+        "width": 850,
+        "height": 630,
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true,
+        "decorations": false,
+        "transparent": false,
+        "shadow": false,
+        "skipTaskbar": false,
+        "alwaysOnTop": false,
+        "additionalBrowserArgs": "--disable-features=msWebOOUI,msPdfOOUI,msSmartScreenProtection",
+        "visible": false
+      }
+    ],
+    "withGlobalTauri": false,
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Productivity",
+    "shortDescription": "PDF OCR与翻译工具",
+    "longDescription": "使用 Mistral OCR 提取 PDF 文本并转换为 Markdown，支持多种 AI 模型进行翻译的桌面应用程序。"
+  }
+}
